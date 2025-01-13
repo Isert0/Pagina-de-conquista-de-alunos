@@ -1,0 +1,91 @@
+/* Arquivo styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('fundo2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  background: url('Aluno.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.student-info {
+  margin-left: 20px;
+}
+
+.student-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.student-info p {
+  margin: 5px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  width: 45%;
+}
+
+.section h2 {
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.achievement-icon-heureca {
+  width: 50px;
+  height: 50px;
+  background: url('Heureca.jpeg') no-repeat center center;
+  background-size: cover;
+  margin-right: 15px;
+}
+.achievement-icon-quadro {
+  width: 50px;
+  height: 50px;
+  background: url('pincel.jpg') no-repeat center center;
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.achievement-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.achievement-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Alunos</title>
+    <link rel="stylesheet" href="styles_busca.css">
+</head>
+<body>
+    <div class="search-container">
+        <!-- Barra de Busca -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar alunos..." class="search-input" onkeyup="filterStudents()">
+        </div>
+
+        <!-- Lista de Alunos -->
+        <ul id="studentList" class="student-list">
+            <li class="student-item"><a href="alunoteste1.html">Ana Clara</a></li>
+            <li class="student-item"><a href="alunoteste2.html">Bruno Ferreira</a></li>
+            <li class="student-item"><a href="alunoteste3.html">Camila Santos</a></li>
+            <li class="student-item"><a href="alunotesteRubi.html">Rubi Oliveira</a></li>
+            <li class="student-item"><a href="aluno5.html">Elisa Moura</a></li>
+            <li class="student-item"><a href="aluno6.html">Felipe Costa</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Função para filtrar os alunos
+        function filterStudents() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const list = document.getElementById('studentList');
+            const students = list.getElementsByTagName('li');
+
+            for (let i = 0; i < students.length; i++) {
+                const student = students[i].getElementsByTagName('a')[0];
+                const textValue = student.textContent || student.innerText;
+
+                if (textValue.toLowerCase().indexOf(filter) > -1) {
+                    students[i].style.display = '';
+                } else {
+                    students[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
